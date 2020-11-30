@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="apple-touch-icon" href="https://www.tiepcancntt.com:8888/template/images/favicon.png">
+    <link rel="shortcut icon" href="https://www.tiepcancntt.com:8888/template/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.tiepcancntt.com:8888/template/images/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/calendar2/semantic.ui.min.css" rel="stylesheet" />
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/calendar2/pignose.calendar.min.css"
+        rel="stylesheet" />
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="https://www.tiepcancntt.com:8888/template/css/helper.css" rel="stylesheet" />
+    <link href="https://www.tiepcancntt.com:8888/template/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/froala_editor.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/froala_style.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/code_view.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/colors.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/emoticons.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/image_manager.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/image.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/line_breaker.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/table.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/char_counter.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/video.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/fullscreen.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/file.css">
+    <link rel="stylesheet"
+        href="https://www.tiepcancntt.com:8888/template/css/lib/froala_editor_2.9.6/plugins/codemirror.min.css">
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/jquery-filer/jquery.filer.css" rel="stylesheet">
+    <link
+        href="https://www.tiepcancntt.com:8888/template/css/lib/jquery-filer/themes/jquery.filer-dragdropbox-theme.css"
+        rel="stylesheet">
+    <link href="https://www.tiepcancntt.com:8888/template/css/progress.css" rel="stylesheet">
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/editor/editor.css" rel="stylesheet">
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/jquery/jquery-ui.css" rel="stylesheet"/>
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="https://www.tiepcancntt.com:8888/template/css/floating/materialize.css" rel="stylesheet">
+    <link href="https://www.tiepcancntt.com:8888/template/css/lib/toastr/toastr.min.css" rel="stylesheet">
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/jquery/jquery-3.4.1.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/jquery-ui/jquery-ui.min.js"></script>
+
+    <title>Tốc ký</title>
+
+</head>
+
+<body class="fix-header fix-sidebar" onkeydown='fnActiveOverwriteByKey()'>
+
+    <div id="overlay">
+        <progress id="progress" class="pure-material-progress-circular"
+            style="margin: 20% auto auto; display: block;"></progress>
+    </div>
+
+    <!-- Preloader - style you can find in spinners.css -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+        </svg>
+    </div>
+
+    <!-- Main wrapper  -->
+    <div id="main-wrapper">
+
+
+        <div class="header">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/test-typing-shorthand.html">
+                        <!-- Logo icon -->
+                        <b><img src="https://www.tiepcancntt.com:8888/template/images/logo.png" alt="homepage"
+                                class="dark-logo" /></b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span><img src="https://www.tiepcancntt.com:8888/template/images/logo-text.png" alt="homepage" -
+                                class="dark-logo" /></span>
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <div class="navbar-collapse">
+                    <!-- toggle and nav items -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"><a class="nav-link nav-toggler hidden-md-up text-muted  " -
+                                href="javascript:void(0)"><i class="mdi mdi-menu"></i></a></li>
+                        <li class="nav-item m-l-10"><a class="nav-link sidebartoggler hidden-sm-down text-muted  " -
+                                href="javascript:void(0)"><i class="ti-menu"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <li class="nav-label">
+                            <strong>Tốc ký</strong>
+                        </li>
+
+                        <li>
+                            <a href="/test-typing-shorthand.html" aria-expanded="false"><i
+                                    class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i><span
+                                    class="hide-menu"> Gõ tốc ký</span></a>
+                        </li>
+
+                        <li>
+                            <a href="/test-typing-detail.html" aria-expanded="false"><i class="fa fa-hand-lizard-o"
+                                    aria-hidden="true"></i><span class="hide-menu"> Chi tiết bộ quy tắc gõ</span></a>
+                        </li>
+
+                        <li>
+                            <a href="/test-manager-dict-steno-list.html" aria-expanded="false"><i
+                                    class="fa fa-file-word-o"></i><span class="hide-menu"> Quản lý bộ từ điển</span></a>
+                        </li>
+
+                        <li><a aria-expanded="false" target="_blank" rel="noopener noreferrer"
+                                href="https://drive.google.com/file/d/1xkT2hjZAR53X6PYKAPtoBP5iDjGzZ7pD/view?usp=sharing"><i
+                                    class="fa fa-list"></i><span class="hide-menu">Hướng dẫn sử dụng</span></a></li>
+
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </div>
+        <!-- End Left Sidebar -->
+
+        <!-- Page wrapper  -->
+        <div class="page-wrapper">
+
+
+            <link rel="stylesheet" type="text/css"
+                href="https://www.tiepcancntt.com:8888/template/css/steno/shorthand_test/ploverdemo.css">
+
+            <div class="container-fluid">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="tab-content br-n pn">
+                                <div id="block-editor" class="tab-pane active">
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <h5 id="name-typing">
+                                                Gõ tiếng Việt tốc ký
+                                            </h5>
+                                        </div>
+                                        <div class="col-6 btn-generate">
+                                            <button class="btn btn-block btn-info" id="button-generate-example"
+                                                style="float: right; width: 60%">
+                                                Tạo mẫu câu để gõ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 vietnameseDocument" style="display: inline-block"></div>
+                                        <div class="col-6 stenoDocument" style="display: inline-block"></div>
+                                    </div>
+                                    <div class="parent">
+                                        <div class="row shorthand" id="shorthand">
+                                            <div class="col-7">
+                                                <div class="form-group">
+                                                    <label for="output">Văn bản:</label>
+                                                    <textarea class="form-control  z-depth-1" rows="10" id="output"
+                                                        wrap="on" style="height: 229px; overflow-y: scroll"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="form-group">
+                                                    <label for="verticalNotes">Tốc ký:</label>
+                                                    <textarea class="form-control  z-depth-1" rows="10" wrap="off"
+                                                        id="verticalNotes">Lưu ý: Tắt phần mềm hỗ trợ gõ tiếng việt khi sử dụng gõ tốc ký &#13;&#10;</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <!-- STANDARD KEYBOARD (This keyboard is based on the IBM PC Windows 104 keyboard) -->
+                                            <div class="col-7"
+                                                style="display: flex; align-items: center; justify-content: center">
+                                                <div id="stdKeyboard">
+                                                    <div class="stdRow">
+                                                        <div class="stdKey code192" id="stdKeyGraveAccent"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">~</span><span class="lower">`</span></div>
+                                                        <div class="stdKey code49" id="stdKey1"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">!</span><span class="lower">1</span></div>
+                                                        <div class="stdKey code50" id="stdKey2"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">@</span><span class="lower">2</span></div>
+                                                        <div class="stdKey code51" id="stdKey3"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">#</span><span class="lower">3</span></div>
+                                                        <div class="stdKey code52" id="stdKey4"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">$</span><span class="lower">4</span></div>
+                                                        <div class="stdKey code53" id="stdKey5"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">%</span><span class="lower">5</span></div>
+                                                        <div class="stdKey code54" id="stdKey6"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">^</span><span class="lower">6</span></div>
+                                                        <div class="stdKey code55" id="stdKey7"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">&amp;</span><span class="lower">7</span>
+                                                        </div>
+                                                        <div class="stdKey code56" id="stdKey8"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">*</span><span class="lower">8</span></div>
+                                                        <div class="stdKey code57" id="stdKey9"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">(</span><span class="lower">9</span></div>
+                                                        <div class="stdKey code48" id="stdKey0"
+                                                            style="background-color: #71787D;"><span
+                                                                class="upper">)</span><span class="lower">0</span></div>
+                                                        <div class="stdKey code109 code189" id="stdKeyDash"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">_</span><span class="lower">-</span></div>
+                                                        <div class="stdKey code107 code187" id="stdKeyEqualSign"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">+</span><span class="lower">=</span></div>
+                                                        <div class="stdKey code8" id="stdKeyBackspace"
+                                                            style="background-color: #6b6b47;">Backspace
+                                                        </div>
+                                                    </div>
+                                                    <div class="stdRow">
+                                                        <div class="stdKey code9" id="stdKeyTab"
+                                                            style="background-color: #6b6b47;">Tab
+                                                        </div>
+                                                        <div class="stdKey code81" id="stdKeyQ"
+                                                            style="background-color: rgb(0, 0, 0);">Q
+                                                        </div>
+                                                        <div class="stdKey code87" id="stdKeyW"
+                                                            style="background-color: rgb(0, 0, 0);">W
+                                                        </div>
+                                                        <div class="stdKey code69" id="stdKeyE"
+                                                            style="background-color: rgb(0, 0, 0);">E
+                                                        </div>
+                                                        <div class="stdKey code82" id="stdKeyR"
+                                                            style="background-color: rgb(0, 0, 0);">R
+                                                        </div>
+                                                        <div class="stdKey code84" id="stdKeyT"
+                                                            style="background-color: rgb(0, 0, 0);">T
+                                                        </div>
+                                                        <div class="stdKey code89" id="stdKeyY"
+                                                            style="background-color: #6b6b47;">Y
+                                                        </div>
+                                                        <div class="stdKey code85" id="stdKeyU"
+                                                            style="background-color: rgb(0, 0, 0);">U
+                                                        </div>
+                                                        <div class="stdKey code73" id="stdKeyI"
+                                                            style="background-color: rgb(0, 0, 0);">I
+                                                        </div>
+                                                        <div class="stdKey code79" id="stdKeyO"
+                                                            style="background-color: rgb(0, 0, 0);">O
+                                                        </div>
+                                                        <div class="stdKey code80" id="stdKeyP"
+                                                            style="background-color: rgb(0, 0, 0);">P
+                                                        </div>
+                                                        <div class="stdKey code219" id="stdKeyOpenBracket"
+                                                            style="background-color: rgb(0, 0, 0);"><span
+                                                                class="upper">{</span><span class="lower">[</span></div>
+                                                        <div class="stdKey code221" id="stdKeyCloseBracket"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">}</span><span class="lower">]</span></div>
+                                                        <div class="stdKey code220" id="stdKeyBackslash"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">|</span><span class="lower">\</span></div>
+                                                    </div>
+                                                    <div class="stdRow">
+                                                        <div class="stdKey code20" id="stdKeyCapsLock"
+                                                            style="background-color: #6b6b47;">Caps Lock
+                                                        </div>
+                                                        <div class="stdKey code65" id="stdKeyA"
+                                                            style="background-color: rgb(0, 0, 0);">A
+                                                        </div>
+                                                        <div class="stdKey code83" id="stdKeyS"
+                                                            style="background-color: rgb(0, 0, 0);">S
+                                                        </div>
+                                                        <div class="stdKey code68" id="stdKeyD"
+                                                            style="background-color: rgb(0, 0, 0);">D
+                                                        </div>
+                                                        <div class="stdKey code70" id="stdKeyF"
+                                                            style="background-color: rgb(0, 0, 0);">F
+                                                        </div>
+                                                        <div class="stdKey code71" id="stdKeyG"
+                                                            style="background-color: rgb(0, 0, 0);">G
+                                                        </div>
+                                                        <div class="stdKey code72" id="stdKeyH"
+                                                            style="background-color: #6b6b47;">H
+                                                        </div>
+                                                        <div class="stdKey code74" id="stdKeyJ"
+                                                            style="background-color: rgb(0, 0, 0);">J
+                                                        </div>
+                                                        <div class="stdKey code75" id="stdKeyK"
+                                                            style="background-color: rgb(0, 0, 0);">K
+                                                        </div>
+                                                        <div class="stdKey code76" id="stdKeyL"
+                                                            style="background-color: rgb(0, 0, 0);">L
+                                                        </div>
+                                                        <div class="stdKey code59 code186" id="stdKeySemicolon"
+                                                            style="background-color: rgb(0, 0, 0);"><span
+                                                                class="upper">:</span><span class="lower">;</span></div>
+                                                        <div class="stdKey code222" id="stdKeySingleQuote"
+                                                            style="background-color: rgb(0, 0, 0);"><span
+                                                                class="upper">"</span><span class="lower">'</span></div>
+                                                        <div class="stdKey code13" id="stdKeyEnter"
+                                                            style="background-color: #6b6b47;">Enter
+                                                        </div>
+                                                    </div>
+                                                    <div class="stdRow">
+                                                        <div class="stdKey code16" id="stdKeyLeftShift"
+                                                            style="background-color: #71787D;">Shift
+                                                        </div>
+                                                        <div class="stdKey code90" id="stdKeyZ"
+                                                            style="background-color: #6b6b47;">Z
+                                                        </div>
+                                                        <div class="stdKey code88" id="stdKeyX"
+                                                            style="background-color: #6b6b47;">X
+                                                        </div>
+                                                        <div class="stdKey code67" id="stdKeyC"
+                                                            style="background-color: rgb(0, 0, 0);">C
+                                                        </div>
+                                                        <div class="stdKey code86" id="stdKeyV"
+                                                            style="background-color: rgb(0, 0, 0);">V
+                                                        </div>
+                                                        <div class="stdKey code66" id="stdKeyB"
+                                                            style="background-color: #6b6b47;">B
+                                                        </div>
+                                                        <div class="stdKey code78" id="stdKeyN"
+                                                            style="background-color: rgb(0, 0, 0);">N
+                                                        </div>
+                                                        <div class="stdKey code77" id="stdKeyM"
+                                                            style="background-color: rgb(0, 0, 0);">M
+                                                        </div>
+                                                        <div class="stdKey code188" id="stdKeyComma"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">&lt;</span><span class="lower">,</span>
+                                                        </div>
+                                                        <div class="stdKey code190" id="stdKeyPeriod"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">&gt;</span><span class="lower">.</span>
+                                                        </div>
+                                                        <div class="stdKey code191" id="stdKeySlash"
+                                                            style="background-color: #6b6b47;"><span
+                                                                class="upper">?</span><span class="lower">/</span></div>
+                                                        <div class="stdKey code16" id="stdKeyRightShift"
+                                                            style="background-color: #71787D;">Shift
+                                                        </div>
+                                                    </div>
+                                                    <div class="stdRow">
+                                                        <div class="stdKey code17" id="stdKeyLeftControl"
+                                                            style="background-color: #71787D;">Ctrl
+                                                        </div>
+                                                        <div class="stdKey code91" id="stdKeyLeftWindows"
+                                                            style="background-color: #6b6b47;">Win
+                                                        </div>
+                                                        <div class="stdKey code18" id="stdKeyLeftAlt"
+                                                            style="background-color: #6b6b47;">Alt
+                                                        </div>
+                                                        <div class="stdKey code32" id="stdKeySpace"
+                                                            style="background-color: #6b6b47;">Space
+                                                        </div>
+                                                        <div class="stdKey code18" id="stdKeyRightAlt"
+                                                            style="background-color: #6b6b47;">Alt
+                                                        </div>
+                                                        <div class="stdKey code92" id="stdKeyRightWindow"
+                                                            style="background-color: #6b6b47;">Win
+                                                        </div>
+                                                        <div class="stdKey code93" id="stdKeyMenu"
+                                                            style="background-color: #6b6b47;">Menu
+                                                        </div>
+                                                        <div class="stdKey code17" id="stdKeyRightControl"
+                                                            style="background-color: #71787D;">Ctrl
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- STENO KEYBOARD -->
+                                            <div class="col-5"
+                                                style="display: flex; align-items: center; justify-content: center">
+                                                <div id="stenoKeyboard">
+                                                    <div class="stenoNumberBar">
+                                                        <div class="stenoKey numberBar code48 code49 code50 code51 code52 code53 code54 code55 code56 code57"
+                                                            id="stenoKeyNumberBar" style="background-color: #71787D;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stenoUpperBank"></div>
+                                                    <div class="stenoLowerBank"></div>
+                                                    <div class="stenoVowelKeys"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <button class="btn btn-block btn-success mt-3" id="button-save"
+                                                onclick="fnOnDone()">
+                                                Xong
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const layoutId = '1';
+
+                let listKey = [];
+                let key;
+
+                key = {
+                    idLayout: 0,
+                    priority: 1,
+                    keyQwerty: 81,
+                    valueQwerty: "q",
+                    valueSteno: "S-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 1,
+                    priority: 3,
+                    keyQwerty: 87,
+                    valueQwerty: "w",
+                    valueSteno: "K-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 2,
+                    priority: 5,
+                    keyQwerty: 69,
+                    valueQwerty: "e",
+                    valueSteno: "R-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 3,
+                    priority: 7,
+                    keyQwerty: 82,
+                    valueQwerty: "r",
+                    valueSteno: "N-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 4,
+                    priority: 8,
+                    keyQwerty: 84,
+                    valueQwerty: "t",
+                    valueSteno: "-H"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 5,
+                    priority: 10,
+                    keyQwerty: 85,
+                    valueQwerty: "u",
+                    valueSteno: "*"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 6,
+                    priority: 16,
+                    keyQwerty: 73,
+                    valueQwerty: "i",
+                    valueSteno: "-W"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 7,
+                    priority: 18,
+                    keyQwerty: 79,
+                    valueQwerty: "o",
+                    valueSteno: "-J"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 8,
+                    priority: 19,
+                    keyQwerty: 80,
+                    valueQwerty: "p",
+                    valueSteno: "-N"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 9,
+                    priority: 21,
+                    keyQwerty: 219,
+                    valueQwerty: "[",
+                    valueSteno: "-T"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 10,
+                    priority: 2,
+                    keyQwerty: 65,
+                    valueQwerty: "a",
+                    valueSteno: "T-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 11,
+                    priority: 4,
+                    keyQwerty: 83,
+                    valueQwerty: "s",
+                    valueSteno: "P-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 12,
+                    priority: 6,
+                    keyQwerty: 68,
+                    valueQwerty: "d",
+                    valueSteno: "H-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 13,
+                    priority: 7,
+                    keyQwerty: 70,
+                    valueQwerty: "f",
+                    valueSteno: "N-"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 14,
+                    priority: 9,
+                    keyQwerty: 71,
+                    valueQwerty: "g",
+                    valueSteno: "-S"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 15,
+                    priority: 11,
+                    keyQwerty: 74,
+                    valueQwerty: "j",
+                    valueSteno: "-I"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 16,
+                    priority: 17,
+                    keyQwerty: 75,
+                    valueQwerty: "k",
+                    valueSteno: "-Y"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 17,
+                    priority: 18,
+                    keyQwerty: 76,
+                    valueQwerty: "l",
+                    valueSteno: "-J"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 18,
+                    priority: 20,
+                    keyQwerty: 186,
+                    valueQwerty: ";",
+                    valueSteno: "-G"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 19,
+                    priority: 22,
+                    keyQwerty: 222,
+                    valueQwerty: "'",
+                    valueSteno: "-K"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 20,
+                    priority: 12,
+                    keyQwerty: 67,
+                    valueQwerty: "c",
+                    valueSteno: "-U"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 21,
+                    priority: 13,
+                    keyQwerty: 86,
+                    valueQwerty: "v",
+                    valueSteno: "-O"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 22,
+                    priority: 14,
+                    keyQwerty: 78,
+                    valueQwerty: "n",
+                    valueSteno: "-E"
+                };
+                listKey.push(key);
+
+                key = {
+                    idLayout: 23,
+                    priority: 15,
+                    keyQwerty: 77,
+                    valueQwerty: "m",
+                    valueSteno: "-A"
+                };
+                listKey.push(key);
+
+
+                const jsonExample = JSON.parse('{"Chúng ta không sợ sai lầm, chỉ sợ phạm sai lầm mà không quyết tâm sửa chữa. Muốn sửa chữa cho tốt thì phải sẵn sàng nghe quần chúng phê bình và thật thà tự phê bình.":"-TK SK-SIUG T-A KH-OWG SN-W S-AJ SR-H*WT *-AW -K SK-HS*I SN-W PHN-AT S-AJ SR-H*WT RH-HA KH-OWG STK-SEYNT T*-WT S-HSEW SKN-SEW -J -NT RH-SUON S-HSEW SKN-SEW SK-O T-SOWNT TH-H*I PH-HSAJ SN-S*AN S-HAG KR-E STK-H*YN SK-SIUG PH-OE P-H*IK SPR-HA THN*-WNT TH-HA TN-UW PH-OE P-H*IK -AGK","Cái gì cũ mà xấu thì phải bỏ. Cái gì cũ mà không xấu, nhưng phiền phức thì phải sửa đổi cho hợp lý. Cái gì cũ mà tốt thì phải phát triển thêm. Cái gì mới mà hay thì phải làm.":"-TK K-SAJ SH-H*I KN-SIU RH-HA ST-S*WJG TH-H*I PH-HSAJ P-HSO -J -NT K-SAJ SH-H*I KN-SIU RH-HA KH-OWG ST-S*WJG *-AW -K TK-UWG PH-HIEN PH-SUWNK TH-H*I PH-HSAJ S-HSEW TP-HSOWJ SK-O HN-WTK SR-SI -J -NT K-SAJ SH-H*I KN-SIU RH-HA T-SOWNT TH-H*I PH-HSAJ PH-SANT TR-HSIEN TH-OET -J -NT K-SAJ SH-H*I RH-SWJ RH-HA H-AJN TH-H*I PH-HSAJ SR-HAT -AGK-TK K-SAJ SH-H*I KN-SIU RH-HA ST-S*WJG TH-H*I PH-HSAJ P-HSO -J -NT K-SAJ SH-H*I KN-SIU RH-HA KH-OWG ST-S*WJG *-AW -K TK-UWG PH-HIEN PH-SUWNK TH-H*I PH-HSAJ S-HSEW TP-HSOWJ SK-O HN-WTK SR-SI -J -NT K-SAJ SH-H*I KN-SIU RH-HA T-SOWNT TH-H*I PH-HSAJ PH-SANT TR-HSIEN TH-OET -J -NT K-SAJ SH-H*I RH-SWJ RH-HA H-AJN TH-H*I PH-HSAJ SR-HAT -AGK","Nước Việt Nam là một, dân tộc Việt Nam là một. Sông có thể cạn, núi có thể mòn song chân lý ấy không bao giờ thay đổi.":"-TK PR-SEWNK -NT SPRN-IENT -NT PR-AT SR-HA RHN-OWNT *-AW -K SP*-WN TN-OWNK -NT SPRN-IENT -NT PR-AT SR-HA RHN-OWNT -J -NT S-OWG K-SO TH-HSOE KN-AN *-AW -K PR-SIUJ K-SO TH-HSOE RH-HON S-OG SK*-WN SR-SI -S*WJN KH-OWG P-AJK SH-HW TH-AJN TP-HSOWJ -AGK","Non sông Việt Nam có trở nên vẻ vang hay không, dân tộc Việt Nam có sánh vai với các cường quốc năm châu được hay không, chính là nhờ một phần lớn ở công học tập của các cháu.":"-TK PR-ON S-OWG -NT SPRN-IENT -NT PR-AT K-SO TR-HSW PR-OEN SPR-HSE SPR-AG H-AJN KH-OWG *-AW -K SP*-WN TN-OWNK -NT SPRN-IENT -NT PR-AT K-SO S-SAK SPR-AJ SPR-SWJ K-SANK K-HEWG STK-SUONK PR*-AT SK*-WJG TPN-EWNK H-AJN KH-OWG *-AW -K SK-S*IK SR-HA TK-HW RHN-OWNT PH-H*WN SR-SWN -HSW K-OWG HN-ONK TN*-WTK K-HSUO K-SANK SK-SAJG -AGK","Chính lòng yêu nước, chứ không phải lý tưởng cộng sản, là nguồn cảm hứng cho tôi.":"-TK SK-S*IK SR-HOG -IEJG PR-SEWNK *-AW -K SK-SUW KH-OWG PH-HSAJ SR-SI T-HSEWG KN-OWG S-HSAN *-AW -K SR-HA KR-HUON K-HSAT H-SUWG SK-O T-OWJ -AGK","Trẻ em như búp trên cành; biết ăn ngủ, biết học hành là ngoan.":"-TK TR-HSE -ET TK-UW P-SIUTK TR-OEN K-HAK -WY -K P-SIENT *-AN KR-HSIU *-AW -K P-SIENT HN-ONK H-HAK SR-HA KR-UN -AGK","Tôi chỉ có một ham muốn, ham muốn tột bậc: là làm sao cho nước nhà được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ai cũng có cơm ăn áo mặc, ai cũng được học hành.":"-TK T-OWJ SK-HS*I K-SO RHN-OWNT H-AT RH-SUON *-AW -K H-AT RH-SUON TN-OWNT PN*-WNK -YNT -K SR-HA SR-HAT S-AJK SK-O PR-SEWNK TK-HA TPN-EWNK H-HUN T-HUN TPN-OWNK SRN*-WTK *-AW -K SP*-WN T-A TPN-EWNK H-HUN T-HUN TN-UW SP-O *-AW -K TP-HOWG P-HAJK -AJ KN-SIUG K-SO K-WT *-AN -SAJK RHN*-ANK *-AW -K -AJ KN-SIUG TPN-EWNK HN-ONK H-HAK -AGK","Những kẻ cứ làm mà không cần học vấn chẳng khác nào người thuỷ thủ đi trên chiếc tàu không bánh lái, không la bàn và cũng chẳng biết rằng họ sẽ đi đâu.":"-TK TKN-SUWG K-HSE K-SUW SR-HAT RH-HA KH-OWG K-H*WN HN-ONK SPR-S*WN SK-HS*AG KH-SANK PR-HAJK KR-HEWJ TH-HSUY TH-HSIU TP*-I TR-OEN SK-SIENK T-HAJG KH-OWG P-SAK SR-SAJ *-AW -K KH-OWG SR-A P-HAN SPR-HA KN-SIUG SK-HS*AG P-SIENT R-H*AG HN-O SN-SE TP*-I TP*-WJG -AGK","Học cái tốt thì khó, ví như người ta leo núi, phải vất vả, khó nhọc mới lên đến đỉnh. Học cái xấu thì dễ, như ở trên đỉnh núi trượt chân một cái là nhào xuống vực sâu":"-TK HN-ONK K-SAJ T-SOWNT TH-H*I KH-SO *-AW -K SPR-S*I TK-UW KR-HEWJ T-A SR-EJK PR-SIUJ *-AW -K PH-HSAJ SPR-S*WNT SPR-HSA *-AW -K KH-SO TKN-ONK RH-SWJ SR-OEN TP-SOEN TP-HS*IK -J -NT HN-ONK K-SAJ ST-S*WJG TH-H*I SPN-SOE *-AW -K TK-UW -HSW TR-OEN TP-HS*IK PR-SIUJ TRN-EWNT SK*-WN RHN-OWNT K-SAJ SR-HA TK-HAJK ST-SUOG SPRN-UWNK S*-WJG","Nhiệm vụ của thanh niên không phải là đòi hỏi nước nhà đã cho mình những gì, mà phải tự hỏi mình đã làm gì cho nước nhà?":"-TK TKN-IET SPRN-IU K-HSUO TH-AK PR-IEN KH-OWG PH-HSAJ SR-HA TP-HOJ H-HSOJ PR-SEWNK TK-HA TPN-SA SK-O RH-H*IK TKN-SUWG SH-H*I *-AW -K RH-HA PH-HSAJ TN-UW H-HSOJ RH-H*IK TPN-SA SR-HAT SH-H*I SK-O PR-SEWNK TK-HA N-HIUA","Trăm năm trong cõi người ta Chữ Tài, chữ Mệnh khéo là ghét nhau":"-TK TR*-AT PR*-AT TR-OG KN-SOJ KR-HEWJ T-A -NT SKN-SUW -NT T-HAJ *-AW -K SKN-SUW -NT RHN-OEK KH-SEJK SR-HA KP-SENT TK-AJG","Các vua Hùng đã có công dựng nước, Bác cháu ta phải cùng nhau giữ lấy nước.":"-TK K-SANK SPR-UO -NT H-HIUG TPN-SA K-SO K-OWG SPN-UWG PR-SEWNK *-AW -K -NT P-SANK SK-SAJG T-A PH-HSAJ K-HIUG TK-AJG SHN-SUW SR-S*WJN PR-SEWNK -AGK","Dân ta phải biết sử ta, cho tường gốc tích nước nhà Việt Nam.":"-TK SP*-WN T-A PH-HSAJ P-SIENT S-HSUW T-A *-AW -K SK-O T-HEWG KP-SOWNK T-S*IGK PR-SEWNK TK-HA -NT SPRN-IENT -NT PR-AT -AGK"}')
+            </script>
+
+            <script
+                src="https://www.tiepcancntt.com:8888/template/js/steno/typing/shorthand_test/changeView.js"></script>
+
+
+            <div id="overlay" style="display: none;">
+                <progress id="progress" class="pure-material-progress-circular"
+                    style="margin: 20% auto auto; display: block;"></progress>
+            </div>
+
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Nhập tên muốn lưu</h4>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="form-validation">
+                                <div class="form-group">
+                                    <label for="name-file">Nhập tên file</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="name-file" name="file-name"
+                                            placeholder="Nhập tên file">
+                                    </div>
+                                    <input type="text" hidden name="data-typing" id="data-typing">
+                                    <input type="hidden" name="sessionId" id="sessionId" value="1">
+                                    <input type="hidden" name="meetingId" id="meetingId" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" onclick="saveFileSteno()">Lưu lại</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                let form_validation = function () {
+                    let e = function () {
+                        $.validator.addMethod("regexp", function (value, element) {
+                            return this.optional(element) || !/[\\/"?*<>|:]/.test(value);
+                        }, 'Kiểm tra lại tên');
+
+                        $(".form-valide").validate({
+                            ignore: [],
+                            errorClass: "invalid-feedback animated fadeInDown",
+                            errorElement: "div",
+                            errorPlacement: function (e, a) {
+                                $(a).parents(".form-group > div").append(e)
+                            },
+                            highlight: function (e) {
+                                $(e).closest(".form-group").removeClass("is-invalid").addClass("is-invalid")
+                            },
+                            success: function (e) {
+                                $(e).closest(".form-group").removeClass("is-invalid"), $(e).remove()
+                            },
+                            rules: {
+                                "file-name": {
+                                    required: true,
+                                    regexp: true
+                                }
+                            },
+                            messages: {
+                                "file-name": "Tên nhập vào không hợp lệ"
+                            }
+                        })
+                    };
+                    return {
+                        init: function () {
+                            e(), $(".js-select2").on("change", function () {
+                                $(this).valid()
+                            })
+                        }
+                    }
+                }();
+                $(function () {
+                    form_validation.init();
+                });
+            </script>
+
+            <div id="input-person" data-path="ZmlsZS9kaWN0L2RpY3RWZXJzaW9uMy1maXguanNvbg=="></div>
+            <div id="keyCodeToSteno"
+                data-path="ZmlsZS9zdGVuby9sYXlvdXQvQm9OaGFuUGhpbVZlcnNpb24zL2tleUNvZGVUb1N0ZW5vLmpzb24="></div>
+            <div id="binaryToSteno"
+                data-path="ZmlsZS9zdGVuby9sYXlvdXQvQm9OaGFuUGhpbVZlcnNpb24zL2JpbmFyeVRvU3Rlbm8uanNvbg=="></div>
+            <div id="keyCodeToStenoNumber"
+                data-path="ZmlsZS9zdGVuby9sYXlvdXQvQm9OaGFuUGhpbVZlcnNpb24zL2tleUNvZGVUb1N0ZW5vTnVtYmVyLmpzb24="></div>
+            <div id="keyCodeToQwerty"
+                data-path="ZmlsZS9zdGVuby9sYXlvdXQvQm9OaGFuUGhpbVZlcnNpb24zL2tleUNvZGVUb1F3ZXJ0eS5qc29u"></div>
+
+
+
+        </div>
+        <!-- End Page wrapper  -->
+        <!-- footer -->
+        <footer class="footer"> © 2019 UBND Thành phố Hà Nội</footer>
+        <!-- End footer -->
+    </div>
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="https://www.tiepcancntt.com:8888/template/js/jquery.slimscroll.js"></script>
+    <!--Menu sidebar -->
+
+    <!--stickey kit -->
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/datatables.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/datatables-init.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/scripts.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/easytimer/easytimer.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/form-validation/jquery.validate.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/jquery.base64.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/tinymce/tinymce.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/tinymce/init.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/editor/editor.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/steno/typing/shorthand/overwriteMode.js"></script>
+
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/codemirror.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/xml.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/froala_editor.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/align.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/code_beautifier.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/code_view.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/colors.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/draggable.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/emoticons.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/font_size.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/font_family.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/image.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/file.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/image_manager.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/line_breaker.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/link.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/lists.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/paragraph_format.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/paragraph_style.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/video.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/table.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/url.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/entities.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/char_counter.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/inline_style.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/save.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/fullscreen.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/languages/vi.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/jquery-filer/jquery.filer.min.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/sweetalert/sweetalert.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/toastr/toastr.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/steno/typing/shorthand_test/ploverdemo.js"></script>
+</body>
+
+</html>

@@ -11,7 +11,7 @@ var saleschart = document.getElementById("sales");
 var myChart1 = new Chart(trafficchart, {
     type: 'line',
     data: {
-            labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+            labels: ['1','2','3','4','5','6','7','8','9','10','11','12'],
             datasets: [{
                 backgroundColor: "rgba(48, 164, 255, 0.5)",
                 borderColor: "rgba(48, 164, 255, 0.8)",
@@ -31,14 +31,14 @@ var myChart1 = new Chart(trafficchart, {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Months'
+                    labelString: 'Tháng'
                 }
             }],
             yAxes: [{
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Number of Visitors'
+                    labelString: 'Số từ gõ được trong một giây'
                 }
             }]
         }
@@ -48,13 +48,13 @@ var myChart1 = new Chart(trafficchart, {
 var myChart2 = new Chart(saleschart, {
     type: 'bar',
     data: {
-        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        labels: ['1','2','3','4','5','6','7','8','9','10','11','12'],
         datasets: [{
             label: 'Income',
             backgroundColor: "rgba(76, 175, 80, 0.5)",
             borderColor: "#6da252",
             borderWidth: 1,
-            data: ["280","300","400","600","450","400","500","550","450","650","950","1000"],
+            data: ["28","30","40","60","45","40","50","55","40","65","95","100"],
         }]
     },
     options: {
@@ -68,14 +68,14 @@ var myChart2 = new Chart(saleschart, {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Months'
+                    labelString: 'Tháng'
                 }
             }],
             yAxes: [{
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Number of Sales'
+                    labelString: 'Tỉ lệ chính xác'
                 }
             }]
         }
