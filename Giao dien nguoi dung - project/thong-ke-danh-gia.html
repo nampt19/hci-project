@@ -25,19 +25,30 @@
 
 <body>
     <div class="wrapper">
-        <nav id="sidebar" class="">
+        <nav id="sidebar" style="background-color: #f0f1f2 !important;">
 
         </nav>
 
         <div id="body" class="active">
-            <nav id="header" class="navbar navbar-expand-lg navbar-white bg-white">
+            <nav id="header" class="navbar navbar-expand-lg navbar-white bg-white"
+                style="background-color: #f0f1f2 !important;">
             </nav>
 
             <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
+                <div class="container-fluid"
+                    style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 style="padding: 20px;"><i class="fas fa-chart-bar"></i> Thống kê đánh giá</h4>
+                                <hr style="margin-top: -25px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 20px;">
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card"
+                                style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf">
                                 <div class="content">
                                     <div class="head" style="display: flex; justify-content: space-between;">
                                         <div>
@@ -46,7 +57,10 @@
                                         </div>
 
                                         <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            <button class="btn dropdown-toggle" type="button"
+                                                onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                                                onmouseout="this.style.backgroundColor='#d8dadf'; this.style.color='#5f677d'"
+                                                style="border-radius: 10px; border-color: #d8dadf; color: #5f677d; background-color: #d8dadf;"
                                                 id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">
                                                 Thời gian
@@ -66,7 +80,8 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card"
+                                style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf">
                                 <div class="content">
                                     <div class="head" style="display: flex; justify-content: space-between;">
                                         <div>
@@ -75,7 +90,10 @@
                                         </div>
 
                                         <div class="dropdown">
-                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                                                onmouseout="this.style.backgroundColor='#f0f1f2'; this.style.color='#5f677d'"
+                                                style="border-radius: 10px; border-color: #d8dadf; color: #5f677d; background-color: #d8dadf;"
                                                 id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false">
                                                 Thời gian
@@ -96,200 +114,219 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="col">
-                            <h4 class="ml-1 mt-3">Quy tắc học được</h4>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-md-3">
-                                <div class="card-body">
-                                    <canvas id="myChart0"></canvas>
-                                </div>
-                                <div style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn btn-secondary" id="infoButton"
-                                        onclick="infoDetail()">Chi tiết</button>
-                                </div>
-                                <div style="display: none;" id="info">
-                                    <table class="table" style="margin-left: 5px; text-align: center;">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Chủ đề</th>
-                                                <th scope="col">Trạng thái</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Báo chí</td>
-                                                <td><i class="fas fa-check"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Văn học</td>
-                                                <td><i class="fas fa-check"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nghệ thuật</td>
-                                                <td><i class="fas fa-times"></i></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <script>
-                                    function infoDetail() {
-                                        if (document.getElementById("info").style.display == "none") {
-                                            document.getElementById("info").style.display = "block";
+                    <div class="row" style="margin: 1px;">
+                        <div class="card"
+                            style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf;">
+                            <div class="col">
+                                <h4 class="ml-1 mt-3">Quy tắc học được</h4>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-md-3">
+                                    <div class="card-body">
+                                        <canvas id="myChart0"></canvas>
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <button type="button" class="btn btn-primary" id="infoButton"
+                                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                                            onmouseout="this.style.backgroundColor='#f0f1f2'; this.style.color='#5f677d'"
+                                            style="border-radius: 10px; border-color: #d8dadf; color: #5f677d; background-color: #d8dadf;"
+                                            onclick="infoDetail()">Chi tiết</button>
+                                    </div>
+                                    <div style="display: none;" id="info">
+                                        <table class="table" style="margin-left: 5px; text-align: center;">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Chủ đề</th>
+                                                    <th scope="col">Trạng thái</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Báo chí</td>
+                                                    <td><i class="fas fa-check"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Văn học</td>
+                                                    <td><i class="fas fa-check"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nghệ thuật</td>
+                                                    <td><i class="fas fa-times"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <script>
+                                        function infoDetail() {
+                                            if (document.getElementById("info").style.display == "none") {
+                                                document.getElementById("info").style.display = "block";
+                                            }
+                                            else {
+                                                document.getElementById("info").style.display = "none"
+                                            }
                                         }
-                                        else {
-                                            document.getElementById("info").style.display = "none"
+                                    </script>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-body">
+                                        <canvas id="myChart1"></canvas>
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <button type="button" class="btn btn-primary"
+                                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                                            onmouseout="this.style.backgroundColor='#f0f1f2'; this.style.color='#5f677d'"
+                                            style="border-radius: 10px; border-color: #d8dadf; color: #5f677d; background-color: #d8dadf;">Chi
+                                            tiết</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-body">
+                                        <canvas id="myChart2"></canvas>
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <button type="button" class="btn btn-primary"
+                                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                                            onmouseout="this.style.backgroundColor='#f0f1f2'; this.style.color='#5f677d'"
+                                            style="border-radius: 10px; border-color: #d8dadf; color: #5f677d; background-color: #d8dadf;">Chi
+                                            tiết</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-body">
+                                        <canvas id="myChart3"></canvas>
+                                    </div>
+                                    <div style="display: flex; justify-content: center;">
+                                        <button type="button" class="btn btn-primary"
+                                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                                            onmouseout="this.style.backgroundColor='#f0f1f2'; this.style.color='#5f677d'"
+                                            style="border-radius: 10px; border-color: #d8dadf; color: #5f677d; background-color: #d8dadf;">Chi
+                                            tiết</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                var labels = [
+                                    "Đã học",
+                                    "Chưa học",
+                                ];
+                                var data = [
+                                    60,
+                                    40,
+                                ];
+                                var pie = document.getElementById("myChart0").getContext('2d');
+                                var myChart = new Chart(pie, {
+                                    type: 'pie',
+                                    data: {
+                                        labels: labels,
+                                        datasets: [
+                                            {
+                                                data: data,
+                                                borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
+                                                backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
+                                            }
+                                        ]
+                                    },
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: "Chủ đề"
                                         }
                                     }
-                                </script>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card-body">
-                                    <canvas id="myChart1"></canvas>
-                                </div>
-                                <div style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn btn-secondary">Chi tiết</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card-body">
-                                    <canvas id="myChart2"></canvas>
-                                </div>
-                                <div style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn btn-secondary">Chi tiết</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card-body">
-                                    <canvas id="myChart3"></canvas>
-                                </div>
-                                <div style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn btn-secondary">Chi tiết</button>
-                                </div>
-                            </div>
+                                });
+                            </script>
+                            <script>
+                                var labels = [
+                                    "Đã nhớ",
+                                    "Chưa nhớ",
+                                ];
+                                var data = [
+                                    70,
+                                    30,
+                                ];
+                                var pie = document.getElementById("myChart2").getContext('2d');
+                                var myChart = new Chart(pie, {
+                                    type: 'pie',
+                                    data: {
+                                        labels: labels,
+                                        datasets: [
+                                            {
+                                                data: data,
+                                                borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
+                                                backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
+                                            }
+                                        ]
+                                    },
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: "Âm đầu"
+                                        }
+                                    }
+                                });
+                            </script>
+                            <script>
+                                var labels = [
+                                    "Đã nhớ",
+                                    "Chưa nhớ",
+                                ];
+                                var data = [
+                                    20,
+                                    80,
+                                ];
+                                var pie = document.getElementById("myChart3").getContext('2d');
+                                var myChart = new Chart(pie, {
+                                    type: 'pie',
+                                    data: {
+                                        labels: labels,
+                                        datasets: [
+                                            {
+                                                data: data,
+                                                borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
+                                                backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
+                                            }
+                                        ]
+                                    },
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: "Âm chính"
+                                        }
+                                    }
+                                });
+                            </script>
+                            <script>
+                                var labels = [
+                                    "Đã nhớ",
+                                    "Chưa nhớ",
+                                ];
+                                var data = [
+                                    50,
+                                    50,
+                                ];
+                                var pie = document.getElementById("myChart1").getContext('2d');
+                                var myChart = new Chart(pie, {
+                                    type: 'pie',
+                                    data: {
+                                        labels: labels,
+                                        datasets: [
+                                            {
+                                                data: data,
+                                                borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
+                                                backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
+                                            }
+                                        ]
+                                    },
+                                    options: {
+                                        title: {
+                                            display: true,
+                                            text: "Âm cuối"
+                                        }
+                                    }
+                                });
+                            </script>
                         </div>
 
-                        <script>
-                            var labels = [
-                                "Đã học",
-                                "Chưa học",
-                            ];
-                            var data = [
-                                60,
-                                40,
-                            ];
-                            var pie = document.getElementById("myChart0").getContext('2d');
-                            var myChart = new Chart(pie, {
-                                type: 'pie',
-                                data: {
-                                    labels: labels,
-                                    datasets: [
-                                        {
-                                            data: data,
-                                            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
-                                            backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
-                                        }
-                                    ]
-                                },
-                                options: {
-                                    title: {
-                                        display: true,
-                                        text: "Chủ đề"
-                                    }
-                                }
-                            });
-                        </script>
-                        <script>
-                            var labels = [
-                                "Đã nhớ",
-                                "Chưa nhớ",
-                            ];
-                            var data = [
-                                70,
-                                30,
-                            ];
-                            var pie = document.getElementById("myChart2").getContext('2d');
-                            var myChart = new Chart(pie, {
-                                type: 'pie',
-                                data: {
-                                    labels: labels,
-                                    datasets: [
-                                        {
-                                            data: data,
-                                            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
-                                            backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
-                                        }
-                                    ]
-                                },
-                                options: {
-                                    title: {
-                                        display: true,
-                                        text: "Âm đầu"
-                                    }
-                                }
-                            });
-                        </script>
-                        <script>
-                            var labels = [
-                                "Đã nhớ",
-                                "Chưa nhớ",
-                            ];
-                            var data = [
-                                20,
-                                80,
-                            ];
-                            var pie = document.getElementById("myChart3").getContext('2d');
-                            var myChart = new Chart(pie, {
-                                type: 'pie',
-                                data: {
-                                    labels: labels,
-                                    datasets: [
-                                        {
-                                            data: data,
-                                            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
-                                            backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
-                                        }
-                                    ]
-                                },
-                                options: {
-                                    title: {
-                                        display: true,
-                                        text: "Âm chính"
-                                    }
-                                }
-                            });
-                        </script>
-                        <script>
-                            var labels = [
-                                "Đã nhớ",
-                                "Chưa nhớ",
-                            ];
-                            var data = [
-                                50,
-                                50,
-                            ];
-                            var pie = document.getElementById("myChart1").getContext('2d');
-                            var myChart = new Chart(pie, {
-                                type: 'pie',
-                                data: {
-                                    labels: labels,
-                                    datasets: [
-                                        {
-                                            data: data,
-                                            borderColor: ['rgba(75, 192, 192, 1)', 'rgba(192, 0, 0, 1)'],
-                                            backgroundColor: ['rgba(75, 192, 192, 0.2)', 'rgba(192, 0, 0, 0.2)'],
-                                        }
-                                    ]
-                                },
-                                options: {
-                                    title: {
-                                        display: true,
-                                        text: "Âm cuối"
-                                    }
-                                }
-                            });
-                        </script>
                     </div>
 
                 </div>

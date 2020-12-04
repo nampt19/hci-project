@@ -1,10 +1,19 @@
-<!-- <nav id="sidebar" class=""> -->
+<style>
+    .mlem:hover {
+        background-color: #2196f3 !important;
+        color: white !important;
+    }
+</style>
+
 <div class="sidebar-header">
-    <img src="assets/img/logo.png" alt="bootraper logo" class="app-logo">
+    <img src="assets/img/images.png" alt="bootraper logo" class="app-logo">
 </div>
 <ul class="list-unstyled components text-secondary">
-    <li id="a1">
-        <a href="dashboard.html"><i class="fas fa-home"></i> Trang Chủ</a>
+    <li>
+        <a id="a1" href="dashboard.html" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-home"></i>
+            Trang Chủ</a>
         <script>
             if (window.location.href == "http://127.0.0.1:5501/dashboard.html") {
                 document.getElementById('a1').style.backgroundColor = "#2196f3";
@@ -12,8 +21,21 @@
             }
         </script>
     </li>
-    <li id="a2">
-        <a href="dung-thu.html"><i class="fas fa-vial"></i> Dùng thử</a>
+    <li>
+        <a id="a7" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-info"></i>Quy tắc gõ</a>
+        <script>
+            if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
+                document.getElementById('a7').style.backgroundColor = "#2196f3";
+                document.getElementById('a8').style.color = "white";
+            }
+        </script>
+    </li>
+    <li>
+        <a id="a2" href="dung-thu.html" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-vial"></i> Dùng thử</a>
         <script>
             if (window.location.href == "http://127.0.0.1:5501/dung-thu.html") {
                 document.getElementById('a2').style.backgroundColor = "#2196f3";
@@ -21,22 +43,28 @@
             }
         </script>
     </li>
-    <li id="a3">
-        <a href="#uielementsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down">
+    <li>
+        <a id="a3" href="#uielementsmenu" data-toggle="collapse" aria-expanded="false"
+            class="dropdown-toggle no-caret-down mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;">
             <i class="fas fa-graduation-cap"></i> Luyện gõ</a>
 
         <ul class="collapse list-unstyled" id="uielementsmenu">
             <li>
-                <a href="luyen-go-theo-chu-de.html"> Luyện gõ theo chủ đề</a>
+                <a href="luyen-go-theo-chu-de.html" style="margin-right: 5px;">
+                    Luyện gõ theo chủ đề</a>
             </li>
             <li>
-                <a href="luyen-go-tay-trai.html"> Luyện gõ âm đầu</a>
+                <a href="luyen-go-tay-trai.html" style="margin-right: 5px;">
+                    Luyện gõ âm đầu</a>
             </li>
             <li>
-                <a href="luyen-go-tay-phai.html"> Luyện gõ âm chính</a>
+                <a href="luyen-go-tay-phai.html" style="margin-right: 5px;">
+                    Luyện gõ âm chính</a>
             </li>
             <li>
-                <a href="luyen-go-cac-nguyen-am.html"> Luyện gõ âm cuối</a>
+                <a href="luyen-go-cac-nguyen-am.html" style="margin-right: 5px; margin-bottom: 13px;">
+                    Luyện gõ âm cuối</a>
             </li>
         </ul>
 
@@ -47,18 +75,20 @@
             }
         </script>
     </li>
-    <li id="a4">
-        <a href="#authmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i
+    <li>
+        <a id="a4" href="#authmenu" data-toggle="collapse" aria-expanded="false"
+            class="dropdown-toggle no-caret-down mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
                 class="fas fa-user-shield"></i> Kiểm tra</a>
         <ul class="collapse list-unstyled" id="authmenu">
             <li>
-                <a href="kiem-tra-de.html"> Dễ </a>
+                <a href="kiem-tra-de.html" style="margin-right: 5px;"> Dễ </a>
             </li>
             <li>
-                <a href="kiem-tra-trung-binh.html"> Trung bình</a>
+                <a href="kiem-tra-trung-binh.html" style="margin-right: 5px;"> Trung bình</a>
             </li>
             <li>
-                <a href="kiem-tra-kho.html"> Khó</a>
+                <a href="kiem-tra-kho.html" style="margin-right: 5px; margin-bottom: 13px;"> Khó</a>
             </li>
         </ul>
         <script>
@@ -68,9 +98,21 @@
             }
         </script>
     </li>
-    
-    <li id="a5">
-        <a href="xep-hang.html"><i class="fas fa-list-ol"></i>Xếp hạng</a>
+    <li>
+        <a id="a8" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-dumbbell"></i>Thi đấu</a>
+        <script>
+            if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
+                document.getElementById('a7').style.backgroundColor = "#2196f3";
+                document.getElementById('a8').style.color = "white";
+            }
+        </script>
+    </li>
+    <li>
+        <a id="a5" href="xep-hang.html" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-list-ol"></i>Xếp hạng</a>
         <script>
             if (window.location.href == "http://127.0.0.1:5501/xep-hang.html") {
                 document.getElementById('a5').style.backgroundColor = "#2196f3";
@@ -78,8 +120,10 @@
             }
         </script>
     </li>
-    <li id="a6">
-        <a href="thong-ke-danh-gia.html"><i class="fas fa-chart-bar"></i>Thống kê đánh giá</a>
+    <li>
+        <a id="a6" href="thong-ke-danh-gia.html" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-chart-bar"></i>Thống kê đánh giá</a>
         <script>
             if (window.location.href == "http://127.0.0.1:5501/thong-ke-danh-gia.html") {
                 document.getElementById('a6').style.backgroundColor = "#2196f3";
@@ -87,8 +131,55 @@
             }
         </script>
     </li>
-    <li id="a7">
-        <a href="quy-tac-go.html" id="a8"><i class="fas fa-info"></i>Quy tắc gõ</a>
+    <li>
+        <a id="a7" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-book"></i>Từ điển</a>
+        <script>
+            if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
+                document.getElementById('a7').style.backgroundColor = "#2196f3";
+                document.getElementById('a8').style.color = "white";
+            }
+        </script>
+    </li>
+    <li>
+        <a id="a7" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-question"></i>Câu hỏi thường gặp</a>
+        <script>
+            if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
+                document.getElementById('a7').style.backgroundColor = "#2196f3";
+                document.getElementById('a8').style.color = "white";
+            }
+        </script>
+    </li>
+    <li>
+        <a id="a7" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-comment"></i>Liên hệ</a>
+        <script>
+            if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
+                document.getElementById('a7').style.backgroundColor = "#2196f3";
+                document.getElementById('a8').style.color = "white";
+            }
+        </script>
+    </li>
+
+    <li>
+        <a id="a7" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-layer-group"></i>Các sản phẩm khác</a>
+        <script>
+            if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
+                document.getElementById('a7').style.backgroundColor = "#2196f3";
+                document.getElementById('a8').style.color = "white";
+            }
+        </script>
+    </li>
+    <li>
+        <a id="a7" href="quy-tac-go.html" id="a8" class="mlem"
+            style="margin-right: 5px; margin-bottom: 5px; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border-color: #f2f2f2; color:#5f677d; background-color: #f2f2f2;"><i
+                class="fas fa-balance-scale"></i>Khác</a>
         <script>
             if (window.location.href == "http://127.0.0.1:5501/quy-tac-go.html") {
                 document.getElementById('a7').style.backgroundColor = "#2196f3";
@@ -97,4 +188,3 @@
         </script>
     </li>
 </ul>
-<!-- </nav> -->
