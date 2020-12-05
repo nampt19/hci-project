@@ -32,243 +32,240 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-md-12">
-                                <h3 style="padding: 20px; color: #2698f3; font-weight: bold;"><i
+                                <h3 style="padding: 20px; color: #1877f2; font-weight: bold;     font-size: 1.75rem;"><i
                                         class="fas fa-info"></i> Quy tắc gõ</h3>
                                 <hr style="margin-top: -25px;">
                             </div>
                         </div>
-                        <div id="list">
-                            <div class="row">
-                                <div class="col-md-12" style="display: flex;">
-                                    <div class="col-md-6">
-                                        <button type="button" class="btn"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #2698f3; color: white;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">Âm
-                                            chính</button>
-                                        <button type="button" class="btn"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">Âm
-                                            đầu</button>
-                                        <button type="button" class="btn"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">Âm
-                                            cuối</button>
-                                    </div>
-                                    <div class="col-md-6" style="display: flex;">
-                                        <input class="form-control mr-sm-2 col-md-10" type="search"
-                                            placeholder="Quy tắc..." aria-label="Search"
-                                            style="border-radius: 10px; width: 400x;">
-                                        <button class="btn my-2 my-sm-0 col-md-2 " type="submit"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'"
-                                            onclick="onSearch()">Tra
-                                            cứu</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #2698f3; color: white;">STT</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #2698f3; color: white;">Âm</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #2698f3; color: white;">Phím
-                                        Steno</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#1</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">ngh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KR</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#2</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">đ</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">TP</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
-                                </div>
-                            </div>
-
-                            <div class="row"
-                                style="display: flex; justify-content: center; padding-top: 10px; border: none;">
-                                <button type="button" class="btn"
-                                    style="margin-right: 5px;border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                    onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                    onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">Trước</button>
-                                <button type="button" class="btn"
-                                    style="margin-right: 5px;border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #2698f3; color: white;">1</button>
-                                <button type="button" class="btn"
-                                    style="margin-right: 5px; border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                    onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                    onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">2</button>
-                                <button type="button" class="btn"
-                                    style="margin-right: 5px; border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                    onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                    onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">3</button>
-                                <button type="button" class="btn"
-                                    style="border-radius: 10px; border-color: #f2f2f2; color: #2698f3; background-color: #f2f2f2;"
-                                    onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                    onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#2698f3'">Sau</button>
-                            </div>
-                        </div>
-
-                        <div id="search" style="display: none;">
-                            <div class="row">
-                                <div class="col-md-12" style="display: flex;">
-                                    <div class="col-md-6">
-                                        <button type="button" class="btn"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #2698f3; color: white;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Âm
-                                            chính</button>
-                                        <button type="button" class="btn"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Âm
-                                            đầu</button>
-                                        <button type="button" class="btn"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Âm
-                                            cuối</button>
-                                    </div>
-                                    <div class="col-md-6" style="display: flex;">
-                                        <input class="form-control mr-sm-2 col-md-10" type="search"
-                                            placeholder="Quy tắc..." aria-label="Search"
-                                            style="border-radius: 10px; width: 400x;">
-                                        <button class="btn my-2 my-sm-0 col-md-2 " type="submit"
-                                            style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
-                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
-                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Tra
-                                            cứu</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="col-md-8">
-                                        <h4 style="padding: 20px;" style="font-weight: bolder;"><i
-                                                class="fas fa-search"></i> Kết quả tìm kiếm: k</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #2698f3; color: white;">STT</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #2698f3; color: white;">Âm</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #2698f3; color: white;">Phím
-                                        Steno</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-top: 10px;">
-                                <div class="col-md-12" style="display: flex; justify-content: center;">
-                                    <button type="button" class="btn col-md-1"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#1</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">ngh</button>
-                                    <button type="button" class="btn col-md-3"
-                                        style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KR</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <script>
-                            function onSearch() {
-                                document.getElementById("list").style.display = "none";
-                                document.getElementById("search").style.display = "block";
-                            }
-                        </script>
                     </div>
-                </div>
 
+                    <div id="list">
+                        <div class="row">
+                            <div class="col-md-12" style="display: flex;">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #1877f2; color: white;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Âm
+                                        chính</button>
+                                    <button type="button" class="btn"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Âm
+                                        đầu</button>
+                                    <button type="button" class="btn"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Âm
+                                        cuối</button>
+                                </div>
+                                <div class="col-md-6" style="display: flex;">
+                                    <input class="form-control mr-sm-2 col-md-10" type="search" placeholder="Quy tắc..."
+                                        aria-label="Search" style="border-radius: 10px; width: 400x;">
+                                    <button class="btn my-2 my-sm-0 col-md-2 " type="submit"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'"
+                                        onclick="onSearch()">Tra
+                                        cứu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #1877f2; color: white;">STT</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #1877f2; color: white;">Âm</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #1877f2; color: white;">Phím
+                                    Steno</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#1</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">ngh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KR</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#2</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">đ</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">TP</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#3</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">kh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KH</button>
+                            </div>
+                        </div>
+                        <div class="row"
+                            style="display: flex; justify-content: center; padding-top: 10px; border: none;">
+                            <button type="button" class="btn"
+                                style="margin-right: 5px;border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Trước</button>
+                            <button type="button" class="btn"
+                                style="margin-right: 5px;border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #1877f2; color: white;">1</button>
+                            <button type="button" class="btn"
+                                style="margin-right: 5px; border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">2</button>
+                            <button type="button" class="btn"
+                                style="margin-right: 5px; border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">3</button>
+                            <button type="button" class="btn"
+                                style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Sau</button>
+                        </div>
+                    </div>
+
+                    <div id="search" style="display: none;">
+                        <div class="row">
+                            <div class="col-md-12" style="display: flex;">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #1877f2; color: white;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Âm
+                                        chính</button>
+                                    <button type="button" class="btn"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Âm
+                                        đầu</button>
+                                    <button type="button" class="btn"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Âm
+                                        cuối</button>
+                                </div>
+                                <div class="col-md-6" style="display: flex;">
+                                    <input class="form-control mr-sm-2 col-md-10" type="search" placeholder="Quy tắc..."
+                                        aria-label="Search" style="border-radius: 10px; width: 400x;">
+                                    <button class="btn my-2 my-sm-0 col-md-2 " type="submit"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Tra
+                                        cứu</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-md-8">
+                                    <h4 style="padding: 20px;" style="font-weight: bolder;"><i
+                                            class="fas fa-search"></i> Kết quả tìm kiếm: k</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #1877f2; color: white;">STT</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #1877f2; color: white;">Âm</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold; background-color: #1877f2; color: white;">Phím
+                                    Steno</button>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12" style="display: flex; justify-content: center;">
+                                <button type="button" class="btn col-md-1"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">#1</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">ngh</button>
+                                <button type="button" class="btn col-md-3"
+                                    style="border-radius: 10px;  margin-right: 5px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf">KR</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function onSearch() {
+                            document.getElementById("list").style.display = "none";
+                            document.getElementById("search").style.display = "block";
+                        }
+                    </script>
+                </div>
             </div>
         </div>
 
