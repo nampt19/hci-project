@@ -1,0 +1,222 @@
+<!doctype html>
+<!-- 
+* Bootstrap Simple Admin Template
+* Version: 1.2
+* Author: Alexis Luna
+* Copyright 2020 Alexis Luna
+* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blank Page | Start Bootstrap</title>
+
+    <link href="assets/vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet">
+    <script src="assets/vendor/jquery3/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" style="background-color: #ffffff !important;">
+
+        </nav>
+
+        <div id="body" class="active">
+            <nav id="header" class="navbar navbar-expand-lg navbar-white bg-white"
+                style="background-color: #ffffff !important;">
+            </nav>
+
+            <div class=" content">
+                <div class="container-fluid"
+                    style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 style="padding: 20px; color: #2196f3; font-weight: bolder;"><i class="fas fa-question"></i> Câu hỏi thường gặp</h3>
+                                <hr style="margin-top: -25px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo1()" class="btn" style="text-align: left; color: #2698f3;">Google
+                                bảo vệ quyền riêng tư và bảo mật thông tin của tôi bằng cách nào?</button>
+                            <p id="qt1" style="text-align: left; padding: 10px; font-weight: 100; display: none;">
+                                <span style="color: #2698f3;">Trả lời:</span> Chúng tôi không ngừng nỗ lực làm việc để
+                                đảm bảo khả năng bảo mật mạnh mẽ,
+                                để bảo vệ
+                                quyền riêng tư của bạn và làm cho Google thậm chí trở nên hiệu quả và hữu ích hơn
+                                cho bạn. Chúng tôi chi hàng trăm triệu đô la mỗi năm cho bảo mật và thuê các chuyên
+                                gia nổi tiếng thế giới trong lĩnh vực bảo mật dữ liệu để giữ cho thông tin của bạn
+                                an toàn. Chúng tôi cũng đã tạo ra các công cụ dễ sử dụng giúp bảo mật và bảo vệ
+                                quyền riêng tư như Trang tổng quan Google, xác minh 2 bước và Cài đặt quảng cáo.
+                                Chính vì vậy mà bạn nắm quyền kiểm soát đối với thông tin bạn chia sẻ với Google.
+                            </p>
+                            <script>
+                                function detailInfo1() {
+                                    if (document.getElementById('qt1').style.display !== 'none') {
+                                        document.getElementById('qt1').style.display = "none";
+                                    }
+                                    else {
+                                        document.getElementById('qt1').style.display = "block";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo2()" class="btn" style="text-align: left; color: #2698f3;">Làm
+                                cách nào để xóa thông tin về bản thân khỏi kết quả tìm kiếm của Google?</button>
+                            <p id="qt2" style="text-align: left; padding: 10px; font-weight: 100; display: none;">
+                                <span style="color: #2698f3;">Trả lời:</span> Kết quả tìm kiếm của Google là sự phản ánh
+                                nội dung có sẵn công khai trên web. Công cụ tìm kiếm không thể xóa nội dung trực tiếp
+                                khỏi các trang web, vì vậy việc xóa kết quả tìm kiếm khỏi Google sẽ không xóa nội dung
+                                khỏi web
+                            </p>
+                            <script>
+                                function detailInfo2() {
+                                    if (document.getElementById('qt2').style.display !== 'none') {
+                                        document.getElementById('qt2').style.display = "none";
+                                    }
+                                    else {
+                                        document.getElementById('qt2').style.display = "block";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Truy
+                                vấn tìm kiếm của tôi có bị gửi tới các trang web khi tôi nhấp vào kết quả trên Google
+                                Tìm kiếm không? </button>
+                            <p id="qt3" style="text-align: left; padding: 10px; font-weight: 100; display: none;">
+                                <span style="color: #2698f3;">Trả lời:</span>Trong một số trường hợp, câu trả lời là có.
+                                Khi bạn nhấp vào một kết quả tìm kiếm trên Google Tìm kiếm, trình duyệt web của bạn cũng
+                                có thể gửi địa chỉ Internet hoặc URL của trang kết quả tìm kiếm đó đến trang web đích
+                                dưới dạng ULR tham chiếu. Đôi khi, URL của trang kết quả tìm kiếm có thể chứa truy vấn
+                                tìm kiếm bạn đã nhập. Nếu bạn đang sử dụng Tìm kiếm SSL (chức năng tìm kiếm được mã hóa
+                                của Google), thì trong hầu hết các trường hợp, cụm từ tìm kiếm của bạn sẽ không được gửi
+                                như một phần của URL trong URL tham chiếu. Có một số ngoại lệ đối với hành vi này, chẳng
+                                hạn như nếu bạn đang sử dụng một số trình duyệt ít phổ biến hơn. Bạn có thể tìm thêm
+                                thông tin về Tìm kiếm SSL tại đây. Các truy vấn tìm kiếm hoặc thông tin có trong URL
+                                tham chiếu có thể được cung cấp trong Google Analytics hoặc một giao diện lập trình ứng
+                                dụng (API). Ngoài ra, các nhà quảng cáo có thể nhận được thông tin liên quan đến những
+                                từ khóa chính xác đã dẫn đến lần nhấp vào quảng cáo.
+                            </p>
+                            <script>
+                                function detailInfo3() {
+                                    if (document.getElementById('qt3').style.display !== 'none') {
+                                        document.getElementById('qt3').style.display = "none";
+                                    }
+                                    else {
+                                        document.getElementById('qt3').style.display = "block";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Tại
+                                sao tôi không nhận được tin gì về Chương trình Cựu nhân viên? </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Chất
+                                lượng hình in tại Gecko như thế nào? Hình in có bị phai màu, bong tróc sau khi sử dụng?
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Ai
+                                quyết định về ưu tiên cho doanh nghiệp nào được nhận tín dụng? </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Các
+                                đơn được đánh giá như thế nào? </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Tôi
+                                không được nhận tín dụng. Liệu có nguồn hỗ trợ nào khác cho doanh nghiệp của tôi?
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Nếu
+                                đại dịch vẫn kéo dài, liệu Thành Phố có tiếp tục việc này? </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card"
+                            style="border-radius: 10px; margin-left: 15px;  margin-right: 15px; border: #d8dadf !important; box-shadow: 0 0 10px 3px #d8dadf; font-weight: bold;">
+                            <button onclick="detailInfo3()" class="btn" style="text-align: left; color: #2698f3;">Ai có
+                                thể được xét duyệt? </button>
+                        </div>
+                    </div>
+                    <div class="row"
+                        style="display: flex; justify-content: center; border: none; padding-bottom: 15px;">
+                        <button type="button" class="btn"
+                            style="margin-right: 5px;border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Trước</button>
+                        <button type="button" class="btn"
+                            style="margin-right: 5px;border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #2698f3; color: white;"
+                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">1</button>
+                        <button type="button" class="btn"
+                            style="margin-right: 5px; border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">2</button>
+                        <button type="button" class="btn"
+                            style="margin-right: 5px; border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">3</button>
+                        <button type="button" class="btn"
+                            style="border-radius: 10px; border-color: #f2f2f2; color: #5f677d; background-color: #f2f2f2;"
+                            onmouseover="this.style.backgroundColor='#2196f3'; this.style.color='white'"
+                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#5f677d'">Sau</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="assets/vendor/jquery3/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/solid.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/fontawesome.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
