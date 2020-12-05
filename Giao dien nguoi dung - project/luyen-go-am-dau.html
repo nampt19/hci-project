@@ -22,14 +22,13 @@
 
 <body>
     <div class="wrapper">
-        <nav id="sidebar"
-            style="background-color: #eaf7f0 !important; border-color: #b7b3b2 !important; border-right-width: 1px !important;">
+        <nav id="sidebar" style="background-color: #ffffff !important;">
 
         </nav>
 
         <div id="body" class="active">
             <nav id="header" class="navbar navbar-expand-lg navbar-white bg-white"
-                style="background-color: #eaf7f0 !important; border-color: #b7b3b2 !important; border-right-width: 1px !important;">
+                style="background-color: #ffffff !important;">
             </nav>
 
             <div class="content">
@@ -38,8 +37,30 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-md-12">
-                                <h4 style="padding: 20px;"><i class="fas fa-graduation-cap"></i> LUYỆN GÕ ÂM ĐẦU</h4>
+                                <h3 style="padding: 20px; color: #1877f2; font-weight: bold;"><i
+                                        class="fas fa-dumbbell"></i> Luyện gõ âm đầu</h3>
                                 <hr style="margin-top: -25px;">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-left: 0px;">
+                            <div class="col-md-12">
+                                <table style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h5 style="color: #1877f2;">Thể thức thi đấu:</h5>
+                                                <hr style="margin-top: 0px;">
+                                                <p>Như mọi người đã biết, chữ cái tiếng Hàn không phải là chữ Latin như
+                                                    Tiếng Anh hay Tiếng Việt nên khi học gõ bàn phím tiếng Hàn sẽ gặp
+                                                    rất nhiều khó khăn . Hôm nay KoreanViet – Sách Tiếng Hàn xin viết
+                                                    bài hướng dẫn chi tiết cách luyện tập bàn phím tiếng Hàn trên máy
+                                                    tính này.</p>
+                                                <h5 style="color: #1877f2;">Bài học:</h5>
+                                                <hr style="margin-top: 0px;">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <div id="list">
@@ -51,14 +72,13 @@
                                             <div class="content">
                                                 <div class="row" style="display: flex;">
                                                     <div class="col-md-12">
-                                                        <p style="color: black;" class="mb-1">Phần 1 : Nhóm các phụ âm
+                                                        <p style="font-weight: bolder;" class="mb-1">Phần
+                                                            1 : Nhóm các phụ âm
                                                             có
                                                             cùng dạng chữ,
                                                             phát âm</p>
-
-
                                                         <div class="table-responsive" style="height:250px;">
-                                                            <div class="card shadow" style="border-radius:10px;">
+                                                            <div class="card shadow" style="border-radius:10px; ">
                                                                 <div class="m-2">
                                                                     <div class="row no-gutters align-items-center">
                                                                         <div class="col">
@@ -78,14 +98,18 @@
                                                                             class="font-weight-bold">s</span> - phím
                                                                         steno: <span class="font-weight-bold">S</span>
                                                                     </p>
-                                                                    <button type="button"
-                                                                        class="btn btn-primary float-right"
-                                                                        style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
-                                                                        <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                    <button type="button" class="btn float-right"
+                                                                        style="border-radius: 10px; border-color: #f2f2f2; color: white; background-color: #1877f2;"
+                                                                        onmouseover="this.style.backgroundColor='#1771e6'; this.style.color='white'"
+                                                                        onmouseout="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                                                        onclick="onLearn()">
+                                                                        Học
                                                                     </button>
+                                                                    <script>
+                                                                        function onLearn() {
+                                                                            location.href = 'http://127.0.0.1:5501/luyen-go-am-dau-chi-tiet.html'
+                                                                        }
+                                                                    </script>
                                                                 </div>
                                                             </div>
                                                             <div class="card shadow" style="border-radius:10px;">
@@ -108,14 +132,13 @@
                                                                             class="font-weight-bold">T</span> - phím
                                                                         steno: <span class="font-weight-bold">T</span>
                                                                     </p>
-                                                                    <button type="button"
-                                                                        class="btn btn-primary float-right"
-                                                                        style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
-                                                                        <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
-                                                                    </button>
+                                                                    <form action="luyen-go-am-dau-chi-tiet.html">
+                                                                        <button type="button" class="btn float-right"
+                                                                            style="border-radius: 10px; border-color: #f2f2f2; color: white; background-color: #1877f2;"
+                                                                            onmouseover="this.style.backgroundColor='#1771e6'; this.style.color='white'"
+                                                                            onmouseout="this.style.backgroundColor='#1877f2'; this.style.color='white'">
+                                                                            Học
+                                                                        </button></form>
                                                                 </div>
                                                             </div>
                                                             <div class="card shadow" style="border-radius:10px;">
@@ -128,7 +151,7 @@
                                                                         </div>
                                                                         <div class="col-auto font-weight-bold">
                                                                             <p
-                                                                                style="color: blue; margin-bottom: 5px; font-weight: 900;">
+                                                                                style="color:  #1877f2; margin-bottom: 5px; font-weight: 900;">
                                                                                 <span
                                                                                     class="spinner-grow spinner-grow-sm"
                                                                                     role="status"
@@ -141,14 +164,13 @@
                                                                             class="font-weight-bold">c,k</span> - phím
                                                                         steno: <span class="font-weight-bold">K</span>
                                                                     </p>
-                                                                    <button type="button"
-                                                                        class="btn btn-primary float-right"
-                                                                        style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
-                                                                        <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
-                                                                    </button>
+                                                                    <form action="luyen-go-am-dau-chi-tiet.html">
+                                                                        <button type="button" class="btn float-right"
+                                                                            style="border-radius: 10px; border-color: #f2f2f2; color: white; background-color: #1877f2;"
+                                                                            onmouseover="this.style.backgroundColor='#1771e6'; this.style.color='white'"
+                                                                            onmouseout="this.style.backgroundColor='#1877f2'; this.style.color='white'">
+                                                                            Học
+                                                                        </button></form>
                                                                 </div>
                                                             </div>
                                                             <div class="card shadow" style="border-radius:10px;">
@@ -161,7 +183,7 @@
                                                                         </div>
                                                                         <div class="col-auto font-weight-bold">
                                                                             <p
-                                                                                style="color: blue; margin-bottom: 5px; font-weight: 900;">
+                                                                                style="color:  #1877f2; margin-bottom: 5px; font-weight: 900;">
                                                                                 <span
                                                                                     class="spinner-grow spinner-grow-sm"
                                                                                     role="status"
@@ -174,37 +196,30 @@
                                                                             class="font-weight-bold">th</span> - phím
                                                                         steno: <span class="font-weight-bold">TH</span>
                                                                     </p>
-                                                                    <button type="button"
-                                                                        class="btn btn-primary float-right"
-                                                                        style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
-                                                                        <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
-                                                                    </button>
+                                                                    <form action="luyen-go-am-dau-chi-tiet.html">
+                                                                        <button type="button" class="btn float-right"
+                                                                            style="border-radius: 10px; border-color: #f2f2f2; color: white; background-color: #1877f2;"
+                                                                            onmouseover="this.style.backgroundColor='#1771e6'; this.style.color='white'"
+                                                                            onmouseout="this.style.backgroundColor='#1877f2'; this.style.color='white'">
+                                                                            Học
+                                                                        </button></form>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class=" progress mb-1 mt-3">
-                                                            <div class="progress-bar progress-bar-striped bg-info"
+                                                        <div class=" progress mb-1 mt-3"
+                                                            style="border-radius: 10px !important; border-color: #d8dadf;">
+                                                            <div class="progress-bar progress-bar-striped bg-warning"
                                                                 role="progressbar" style="width: 50%;"
                                                                 aria-valuenow="10" aria-valuemin="0"
                                                                 aria-valuemax="100">
-                                                                Tốc độ gõ: 50wpm</div>
+                                                                Đã hoàn thành: 50%</div>
                                                         </div>
-                                                        <div class="progress mb-1">
-                                                            <div class="progress-bar progress-bar-striped bg-warning"
-                                                                role="progressbar" style="width: 50%" aria-valuenow="25"
-                                                                aria-valuemin="0" aria-valuemax="100">
-                                                                Độ chính xác: 99%
-                                                            </div>
-                                                        </div>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-md-3 ">
                                         <div class="card"
                                             style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf">
@@ -238,10 +253,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -255,7 +270,7 @@
                                                                         </div>
                                                                         <div class="col-auto font-weight-bold">
                                                                             <p
-                                                                                style="color: blue; margin-bottom: 5px; font-weight: 900;">
+                                                                                style="color:  #1877f2; margin-bottom: 5px; font-weight: 900;">
                                                                                 <span
                                                                                     class="spinner-grow spinner-grow-sm"
                                                                                     role="status"
@@ -271,10 +286,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -288,7 +303,7 @@
                                                                         </div>
                                                                         <div class="col-auto font-weight-bold">
                                                                             <p
-                                                                                style="color: blue; margin-bottom: 5px; font-weight: 900;">
+                                                                                style="color:  #1877f2; margin-bottom: 5px; font-weight: 900;">
                                                                                 <span
                                                                                     class="spinner-grow spinner-grow-sm"
                                                                                     role="status"
@@ -306,10 +321,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -323,7 +338,7 @@
                                                                         </div>
                                                                         <div class="col-auto font-weight-bold">
                                                                             <p
-                                                                                style="color: blue; margin-bottom: 5px; font-weight: 900;">
+                                                                                style="color:  #1877f2; margin-bottom: 5px; font-weight: 900;">
                                                                                 <span
                                                                                     class="spinner-grow spinner-grow-sm"
                                                                                     role="status"
@@ -341,10 +356,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -391,7 +406,7 @@
                                                                         </div>
                                                                         <div class="col-auto font-weight-bold">
                                                                             <p
-                                                                                style="color: blue; margin-bottom: 5px; font-weight: 900;">
+                                                                                style="color:  #1877f2; margin-bottom: 5px; font-weight: 900;">
                                                                                 <span
                                                                                     class="spinner-grow spinner-grow-sm"
                                                                                     role="status"
@@ -407,10 +422,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -434,10 +449,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -461,10 +476,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -488,10 +503,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -544,10 +559,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2;"
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
 
 
@@ -573,10 +588,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
 
                                                                 </div>
@@ -601,10 +616,10 @@
                                                                     <button type="button"
                                                                         class="btn btn-primary float-right"
                                                                         style="border-radius: 50px; border-color: #f2f2f2; "
-                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color='blue'"
-                                                                        onmouseout="this.style.backgroundColor='blue'; this.style.color='white'">
+                                                                        onmouseover="this.style.backgroundColor='white'; this.style.color=' #1877f2'"
+                                                                        onmouseout="this.style.backgroundColor=' #1877f2'; this.style.color='white'">
                                                                         <a href="luyen-go-am-dau-chi-tiet.html">
-                                                                            Học >></a>
+                                                                            Học</a>
                                                                     </button>
 
                                                                 </div>
@@ -634,19 +649,6 @@
                                 </div>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-12" style="display: flex;">
-                                <div class="col-md-6">
-
-                                </div>
-                                <div class="col-md-6" style="display: flex;">
-
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-
                     </div>
                 </div>
 
