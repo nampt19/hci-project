@@ -38,11 +38,13 @@
                     <div class="page-title">
                         <div class="row">
                             <div class="col-md-12">
-                                <h4 style="padding: 20px;"><i class="fas fa-graduation-cap"></i> LUYỆN GÕ ÂM ĐẦU</h4>
+                                <h4 id="title" style="padding: 20px;"><i class="fas fa-graduation-cap"></i> LUYỆN GÕ ÂM
+                                    ĐẦU/Phần
+                                    1/bài 1: âm S</h4>
                                 <hr style="margin-top: -25px;">
                             </div>
                         </div>
-                       
+
                         <div id="list">
                             <div class="row">
                                 <div class="col-md-12" style="display: flex;">
@@ -50,38 +52,40 @@
                                         <h5 class="card-title">Hãy gõ âm tiết: </h5>
                                     </div>
                                     <div class="col-md-4" style="display: flex;">
-                                       <h5 class="text-danger">S</h5>
+                                        <h5 id="rhythm" class="text-danger">S</h5>
                                     </div>
                                     <div class="col-md-2" style="display: flex;">
-                                        <button type="button" class="btn btn-primary">Âm khác >></button>
-                                     </div>
+                                        <button type="button" class="btn btn-primary" onclick="next();">Âm tiếp
+                                            >></button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                               <p class="text-danger" style="margin-left:45% ;font-size: 16px;">Chưa đúng !</p>
+                                <p id="demo" style="margin-left:45% ;font-size: 16px;"></p>
                             </div>
                             <div class="row">
                                 <div class="col-md-12" style="display: flex;">
                                     <div class="col-md-3" style="display: flex;">
-                                       
+
                                     </div>
                                     <div class="col-md-6" style="display: flex;">
-                                <input  class="form-control" required>
-                                      
+                                        <input id="myInput" oninput="myFunction()" class="form-control" required
+                                            autofocus>
+
                                     </div>
                                     <div class="col-md-3" style="display: flex;">
-                                        
-                                     </div>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <img src="assets/img/S.PNG" alt="bootraper logo" class="app-logo"
-                                style="width:100%;height:400px;"> 
+                                <img id="img" src="assets/img/S.PNG" alt="bootraper logo" class="app-logo"
+                                    style="width:100%;height:400px;">
                             </div>
                             <hr>
                         </div>
-                        
-                        
+
+
 
                     </div>
                 </div>
@@ -97,7 +101,56 @@
     <script src="assets/vendor/fontawesome5/js/solid.min.js"></script>
     <script src="assets/vendor/fontawesome5/js/fontawesome.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        var count = 0;
+        function myFunction() {
+            var x = document.getElementById("myInput").value;
+            if (count == 0) {
+                if (x == "q") {
+                    document.getElementById("demo").innerHTML = "Bạn đã nhập đúng !";
+                    document.getElementById("demo").classList = "text-success";
+                    document.getElementById("myInput").value = x;
+                }
+                else {
+                    document.getElementById("demo").innerHTML = "Bạn nhập sai !";
+                    document.getElementById("demo").classList = "text-danger";
+                    document.getElementById("myInput").value = "";
+                }
+            } else if (count == 1) {
+                if (x == "w" || x == "ư") {
 
+                    document.getElementById("demo").innerHTML = "Bạn đã nhập đúng !";
+                    document.getElementById("demo").classList = "text-success";
+                    document.getElementById("myInput").value = x;
+                }
+                else {
+                    document.getElementById("demo").innerHTML = "Bạn nhập sai !";
+                    document.getElementById("demo").classList = "text-danger";
+                    document.getElementById("myInput").value = x;
+
+                }
+            }
+        }
+        function next() {
+
+            if (count == 0) {
+                document.getElementById("title").innerHTML = "<i class='fas fa-graduation-cap'></i>LUYỆN GÕ ÂM ĐẦU/Phần 1/bài 2: âm K";
+                count++;
+                document.getElementById("myInput").value = "";
+                document.getElementById("myInput").focus();
+                document.getElementById("rhythm").innerHTML = "K";
+                document.getElementById("img").src = "assets/img/K.PNG"
+            } else if (count == 1) {
+                document.getElementById("title").innerHTML = "<i class='fas fa-graduation-cap'></i> LUYỆN GÕ ÂM ĐẦU/Phần 1/bài 1: âm S";
+                count--;
+                document.getElementById("myInput").value = "";
+                document.getElementById("myInput").focus();
+                document.getElementById("rhythm").innerHTML = "S";
+                document.getElementById("img").src = "assets/img/S.PNG"
+            }
+
+        }
+    </script>
 </body>
 
 </html>
