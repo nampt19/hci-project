@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quy tắc gõ</title>
+
+    <link href="assets/vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet">
+    <script src="assets/vendor/jquery3/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <link href="assets/css/mlem.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" style="background-color: #ffffff !important;">
+
+        </nav>
+
+        <div id="body" class="active">
+            <nav id="header" class="navbar navbar-expand-lg navbar-white bg-white"
+                style="background-color: #ffffff !important;">
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid"
+                    style="border-radius: 10px; border-color: #d8dadf; box-shadow: 0 0 10px 3px #d8dadf">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 style="padding: 20px; color: #1877f2; font-weight: bold; font-size: 1.75rem;"><i
+                                        class="fas fa-book"></i> Từ điển</h3>
+                                <hr style="margin-top: -25px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="list">
+                        <div class="row">
+                            <div class="col-md-12" style="display: flex;">
+                                <div class="col-md-6" style="display: flex;">
+                                    <input class="form-control mr-sm-2 col-md-10" type="search"
+                                        placeholder="Nhập từ tra cứu..." aria-label="Search"
+                                        style="border-radius: 10px; width: 400x;">
+                                    <button class="btn my-2 my-sm-0 col-md-2 " type="submit"
+                                        style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                        onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                        onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'"
+                                        onclick="onDic()">Tra
+                                        cứu</button>
+
+                                    <script>
+                                        function onDic() {
+                                            document.getElementById('dict').style.display = 'block';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="float: right;">
+                                        <button type="button" class="btn" data-toggle="modal"
+                                            data-target="#exampleModal"
+                                            style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                            onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                            onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Danh sách yêu
+                                            thích</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content" style="border-radius: 10px !important;">
+                                            <div class="col-md-12">
+                                                <table class="table" style="width: 100%">
+                                                    <colgroup>
+                                                        <col span="1" style="width: 10%;">
+                                                        <col span="1" style="width: 40%;">
+                                                        <col span="1" style="width: 40%;">
+                                                        <col span="1" style="width: 10%;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Đất nước</td>
+                                                            <td>KN-SOJ</td>
+                                                            <td><i class="fa fa-star" style="color: #1877f2;"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Đất nước</td>
+                                                            <td>KN-SOJ</td>
+                                                            <td><i class="fa fa-star" style="color: #1877f2;"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Đất nước</td>
+                                                            <td>KN-SOJ</td>
+                                                            <td><i class="fa fa-star" style="color: #1877f2;"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="col-md-12" style="margin: 7px;">
+                                                <button type="button" class="btn" data-dismiss="modal"
+                                                    style="float: right; border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2;"
+                                                    onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+                                                    onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Đóng</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div id="dict" style="display: none;">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-8">
+                                    <h5 style="padding: 20px;"> Kết quả tìm kiếm cho <span
+                                            style="font-weight: bold;">"Đât
+                                            nước"</span> : <span style="font-weight: bold;">"KN-SOJ"</span></h5>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="float: right;padding: 10px;">
+                                        <button onclick="onStar()" class="btn"><i class="fa fa-star"
+                                                style="color: black;" id="star"></i></button>
+                                        <script>
+                                            function onStar() {
+                                                if (document.getElementById('star').style.color == 'black') {
+                                                    document.getElementById('star').style.color = '#1877f2'
+                                                }
+                                                else document.getElementById('star').style.color = 'black'
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-12" style="display: flex; justify-content: center;">
+                                    <div>
+                                        <img src="assets/img/typehand.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="assets/vendor/jquery3/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/solid.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/fontawesome.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/datatables.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script
+        src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/datatables/datatables-init.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/scripts.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/easytimer/easytimer.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/form-validation/jquery.validate.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/jquery.base64.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/tinymce/tinymce.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/tinymce/init.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/editor/editor.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/steno/typing/shorthand/overwriteMode.js"></script>
+
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/codemirror.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/xml.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/froala_editor.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/align.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/code_beautifier.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/code_view.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/colors.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/draggable.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/emoticons.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/font_size.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/font_family.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/image.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/file.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/image_manager.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/line_breaker.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/link.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/lists.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/paragraph_format.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/paragraph_style.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/video.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/table.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/url.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/entities.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/char_counter.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/inline_style.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/save.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/plugins/fullscreen.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tiepcancntt.com:8888/template/js/lib/froala_editor_2.9.6/languages/vi.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/jquery-filer/jquery.filer.min.js"></script>
+
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/sweetalert/sweetalert.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/lib/toastr/toastr.min.js"></script>
+    <script src="https://www.tiepcancntt.com:8888/template/js/steno/typing/shorthand_test/ploverdemo.js"></script>
+
+</body>
+
+</html>
