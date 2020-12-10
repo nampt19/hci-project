@@ -20,7 +20,8 @@ $(document).ready(function () {
     stenoVowelKeys.empty();
     let stdKeyboard = "#stdKeyboard";
     for (let j = 0; j < listKey.length; j++) {
-        let textStd = `<span class="upper">` + listKey[j].valueSteno.replace('-', '') + `</span><span class="lower-left" style="color: #6b6b47">` + listKey[j].valueQwerty.toUpperCase() + `</span>`
+        //thay 6b6b47 = 660000
+        let textStd = `<span class="upper">` + listKey[j].valueSteno.replace('-', '') + `</span><span class="lower-left" style="color: #EEE8AA">` + listKey[j].valueQwerty.toUpperCase() + `</span>`
         $(stdKeyboard).find(".code" + listKey[j].keyQwerty).empty()
         $(stdKeyboard).find(".code" + listKey[j].keyQwerty).append(textStd)
         if (listKey[j].idLayout < 10) {

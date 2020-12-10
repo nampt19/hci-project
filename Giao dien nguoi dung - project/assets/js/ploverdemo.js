@@ -577,16 +577,19 @@ function resetKeys() {
     isSteno = true;
 
     // Clear keyboard colors
-    $('.stdKey').css('background-color', '#6b6b47');
+    // thay 6b6b47 = B5B5B5
+    $('.stdKey').css('background-color', '#B5B5B5');
     for (let j = 0; j < listKey.length; j++) {
-        $("#stdKeyboard").find(".code" + listKey[j].keyQwerty).css('background-color', '#000000')
+        // thay #000000 = #8B4513
+        $("#stdKeyboard").find(".code" + listKey[j].keyQwerty).css('background-color', '#800517')
     }
     for (let i = 0; i < 10; i++) {
         $("#stdKey" + i).css('background-color', '#71787D')
     }
     $("#stdKeyboard").find(".code16").css('background-color', '#71787D')
     $("#stdKeyboard").find(".code17").css('background-color', '#71787D')
-    $('.stenoKey').css('background-color', '#000000');
+    // thay #000000 = #8B4513
+    $('.stenoKey').css('background-color', '#800517');
     $('#stenoKeyNumberBar').css('background-color', '#71787D')
 }
 
