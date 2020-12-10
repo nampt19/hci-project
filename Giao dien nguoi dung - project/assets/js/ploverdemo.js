@@ -1228,19 +1228,19 @@ $(document).keyup(function (event) {
 
                 countLog++
                 if (countLog === 5) {
-                    $.ajax({
-                        url: '/test-typing-shorthand.html',
-                        type: "post",
-                        data: {
-                            output: $("#output").val(),
-                            notes: $("#verticalNotes").val()
-                        },
-                        success: function () {
-                        },
-                        error: function (jqXHR, textStatus, errorThrown) {
-                            console.log(textStatus, errorThrown);
-                        }
-                    });
+                    // $.ajax({
+                    //     url: '/test-typing-shorthand.html',
+                    //     type: "post",
+                    //     data: {
+                    //         output: $("#output").val(),
+                    //         notes: $("#verticalNotes").val()
+                    //     },
+                    //     success: function () {
+                    //     },
+                    //     error: function (jqXHR, textStatus, errorThrown) {
+                    //         console.log(textStatus, errorThrown);
+                    //     }
+                    // });
                     countLog = 0
                 }
 
