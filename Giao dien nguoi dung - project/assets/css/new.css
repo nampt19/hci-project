@@ -1,0 +1,49 @@
+.easy-game {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: rgb(0, 204, 255);
+    /* background-image: url("../img/wind.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -8px 0px; */
+  }
+  
+  .easy-game .game-component {
+    height: 100px;
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+  }
+  .easy-game .ship {
+    background-image: url("../img/ship.png");
+    margin-right: auto;
+  }
+  .easy-game .goal {
+    background-image: url("../img/finish.png");
+  }
+  
+  .exam-text {
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(81, 165, 42);
+  }
+  
+  .exam-text .speed-icon {
+    width: 140px;
+    background-image: url("../img/speed.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50px;
+  }
+  
+  .exam-text .text {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+  }
+  
