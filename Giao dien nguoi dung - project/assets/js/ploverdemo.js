@@ -580,7 +580,7 @@ function resetKeys() {
     // thay 6b6b47 = B5B5B5
     $('.stdKey').css('background-color', '#B5B5B5');
     for (let j = 0; j < listKey.length; j++) {
-        // thay #000000 = #8B4513
+        // thay #000000 = #800517
         $("#stdKeyboard").find(".code" + listKey[j].keyQwerty).css('background-color', '#800517')
     }
     for (let i = 0; i < 10; i++) {
@@ -588,7 +588,7 @@ function resetKeys() {
     }
     $("#stdKeyboard").find(".code16").css('background-color', '#71787D')
     $("#stdKeyboard").find(".code17").css('background-color', '#71787D')
-    // thay #000000 = #8B4513
+    // thay #000000 = #800517
     $('.stenoKey').css('background-color', '#800517');
     $('#stenoKeyNumberBar').css('background-color', '#71787D')
 }
