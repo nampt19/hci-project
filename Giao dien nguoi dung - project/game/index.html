@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="assets/vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- HTML5 Audio tags - weakly supported, works in Chrome(tested) -->
+	<audio id="background" src='sound/background.mp3'></audio>
+	<audio id="rightsound" src='sound/right.mp3'></audio>
+	<audio id="wrongsound" src='sound/wrong.mp3'></audio>
+
+	<!-- Before the game begins problem set selection -->
+	<div id="pre-start">
+		<select id="problem-set" style="display: none;">
+		</select>
+		<button id="start" class="btn my-2 my-sm-0"
+			style="border-radius: 10px; border-color: #f2f2f2; color: #1877f2; background-color: #f2f2f2; font-weight: bold;"
+			onmouseover="this.style.backgroundColor='#1877f2'; this.style.color='white'"
+			onmouseout="this.style.backgroundColor='#f2f2f2'; this.style.color='#1877f2'">Bắt đầu!</button>
+	</div>
+
+	<!-- Shown when the player wins/loses -->
+	<div id="game-over">
+	</div>
+
+	<!-- The actual game markup -->
+	<div id="game">
+		<div id="options">
+			<div id="fifty" class="options-button" data-bind="click: fifty"></div>
+			<div id="phone-friend" class="options-button" data-bind="click: fadeOutOption"></div>
+			<div id="audience" class="options-button" data-bind="click: fadeOutOption"></div>
+		</div>
+		<div id="question-box">
+			<span class="content" data-bind="text: getQuestionText()"></span>
+		</div>
+		<div id="answer-box">
+			<div id="answer-one" class="answer" data-bind="click: function() { answerQuestion(0, $element.id) }">
+				<span class="big-text">A.</span><span data-bind="text: getAnswerText(0)"></span>
+			</div>
+			<div id="answer-two" class="answer" data-bind="click: function() { answerQuestion(1, $element.id) }">
+				<span class="big-text">B.</span><span data-bind="text: getAnswerText(1)"></span>
+			</div>
+			<div id="answer-three" class="answer" data-bind="click: function() { answerQuestion(2, $element.id) }">
+				<span class="big-text">C.</span><span data-bind="text: getAnswerText(2)"></span>
+			</div>
+			<div id="answer-four" class="answer" data-bind="click: function() { answerQuestion(3, $element.id) }">
+				<span class="big-text">D.</span><span data-bind="text: getAnswerText(3)"></span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.0.0.js"></script>
+	<script type="text/javascript" src="js/millionaire.js"></script>
+</body>
+
+</html>

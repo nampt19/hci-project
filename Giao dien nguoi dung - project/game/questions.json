@@ -1,0 +1,58 @@
+{
+	"games" : [
+		{
+		    "questions" : [
+		        {
+		            "question" : "Phím Steno tương ứng của âm t là phím nào?",
+		            "content" : [
+		                "T",
+		                "B",
+		                "C",
+		                "D"
+		            ],
+		            "correct" : 0
+		        },
+		        {
+		            "question" : "Phím Steno tương ứng của âm ng là phím nào?",
+		            "content" : [
+		                "KR",
+		                "KN",
+		                "KC",
+		                "KK"
+		            ],
+		            "correct" : 0
+		        },
+		        {
+		            "question" : "Có bao nhiêu phím trên bàn phím để gõ âm chính?",
+		            "content" : [
+		                "11",
+		                "12",
+		                "13",
+		                "14"
+		            ],
+		            "correct" : 0
+		        },
+		        {
+		            "question" : "Bàn phím tốc ký sử dụng 5 phím nào để gõ các âm cuối?",
+		            "content" : [
+		                "JNGTK",
+		                "JSXFG",
+		                "MLEMM",
+		                "Tất cả các phương án trên"
+		            ],
+		            "correct" : 0
+		        },
+		        {
+		            "question" : "Có mấy cách để xoá các kí tự trên bàn phím tốc ky?",
+		            "content" : [
+		                "1",
+		                "2",
+		                "3",
+		                "4"
+		            ],
+		            "correct" : 1
+		        }
+		    ]
+		}
+	]
+}
