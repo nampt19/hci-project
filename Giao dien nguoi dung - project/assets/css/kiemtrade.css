@@ -1,0 +1,9 @@
+.easy-game .ship {
+    background-image: url(../img/ship.png);
+    margin-right: auto;
+}
+
+.trans{
+    transform: translateX(1000px);
+    transition-duration: 300s;
+}
